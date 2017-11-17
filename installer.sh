@@ -31,7 +31,10 @@ fi
 echo "UI configuration updated."
 echo -n "Reboot Now? (y/n)? "
 read answer
-if echo "$answer" | grep -iq "^y" ;then
+if echo "$answer" | grep -iq "^y"
+then
     echo "rebooting down..."
-	sudo reboot now
+    sudo reboot now
+ else
+    echo "Done."
 fi
