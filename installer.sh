@@ -35,6 +35,6 @@ if echo "$answer" | grep -iq "^y"
 then
     echo "rebooting down..."
     sudo reboot now
- else
+else
     echo "Done."
 fi
